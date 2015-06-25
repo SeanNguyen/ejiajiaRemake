@@ -73,6 +73,7 @@
 	    width: 142px; /* base width -> (100^2 + 100^2)^1/2 */
 	    text-align: center;
 	    color: #FCFCFC;
+	    font-weight: bold;
 
 	    @media (max-width: $width-xxs) {
 	    	top: 10px;
