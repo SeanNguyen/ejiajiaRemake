@@ -7,6 +7,8 @@
 @import './modules/searchBar';
 @import './modules/resultList';
 @import './modules/map';
+@import './modules/filterBar';
+
 
 body {
   //global settings
@@ -21,8 +23,7 @@ body {
   }
 
   .main-filter {
-    height: 100px;
-    border: solid 1px #000;
+    padding: 0;
   }
 
   .main-result {

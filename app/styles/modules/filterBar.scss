@@ -1,3 +1,66 @@
+@import '../config';
+
 .filterBar {
-	
+	background-color: $primaryColor;
+	padding: 10px;
+
+	display: flex;
+	align-items: center;
+
+	.filter-expandButton {
+		flex-shrink: 0;
+		border: none;
+		outline: none;
+		background-color: transparent;
+		border-right: solid 2px #FFF;
+		border-radius: 0;
+
+		color: $white;
+		font-weight: bold;
+
+		img {
+			width: 10px;
+			height: auto;
+		}
+	}
+
+	.selectedOptionContainer {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+
+		.selectedItem {
+			margin: 5px;
+
+			height: 25px;
+			background-color: $white;
+			border: solid 1px $grey;
+
+			display: flex;
+			align-items: center;
+
+			.categoryImage {
+				margin: 10px;
+				height: 15px;
+				width: auto;
+			}
+
+			.removeButton {
+				margin: 10px;
+				height: 10px;
+				width: auto;
+			}
+
+			button {
+				border: none;
+				outline: none;
+				background-color: transparent;
+				padding: 0;
+			}
+
+			h5 {
+				font-size: 12px;
+			}
+		}
+	}
 }
