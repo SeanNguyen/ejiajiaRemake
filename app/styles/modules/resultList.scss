@@ -6,4 +6,31 @@
 	.resultItem {
 		padding: 0;
 	}
+
+	.resultBar {
+		padding: 1px;
+		background-color: $lightPrimaryColor;
+
+		h6 {
+			text-align: center;
+		}
+	}
+
+	.pageNav {
+		height: 40px;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.arrow {
+			height: 20px;
+		}
+
+		button {
+			border: none;
+			outline: none;
+			background-color: transparent;
+		}
+	}
 }
