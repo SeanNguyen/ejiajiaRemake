@@ -5,10 +5,24 @@ $lightPrimaryColor: #b5f8f0;
 $darkPrimaryColor: #00bebd;
 $secondaryColor: #ecf9f8;
 $grey: #CCC;
+$defaultTextColor: #808080;
 
 //screen size
-$mobileMaxWidth: 767px;
-$phoneMaxWidth: 480px;
+/* Custom, iPhone Retina */ 
+$width-xxs: 320px;
+/* Extra Small Devices, Phones */ 
+$width-xs: 480px;
+/* Small Devices, Tablets */
+$width-sm: 768px;
+/* Medium Devices, Desktops */
+$width-md: 992px;
+/* Large Devices, Wide Screens */
+$width-lg: 1200px;
 
+//fonts
+@font-face {
+    font-family: "AdobeHeitiStd";
+    src: url(./fonts/AdobeHeitiStd-Regular.otf) format("truetype");
+}
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 
