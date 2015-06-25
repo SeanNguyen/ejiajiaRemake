@@ -1,4 +1,5 @@
 @import '../config';
+@import 'infoBar';
 
 .resultItem {
 	position: relative;
@@ -93,33 +94,6 @@
 				margin: 5px;
 				color: #FCFCFC;
 			}
-		}
-	}
-
-	.statistic {
-		background-color: #FCFCFC;
-		height: 40px;
-		overflow: hidden;
-		padding: 10px;
-
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-
-		.detailItem {
-			display: flex;
-			align-items: center;
-
-			img {
-				margin: 5px;
-
-				height: 14px;
-				width: auto;
-			}
-		}
-		.price {
-			float: right;
-			font-size: 14px;
 		}
 	}
 }

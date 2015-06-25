@@ -1,0 +1,65 @@
+@import '../config';
+@import 'infoBar';
+
+.map {
+	position: relative;
+	padding: 0;
+
+	.pin {
+		position: absolute;
+		background-image: url('../images/map_pin.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		width: 100px;
+		height: 50px;
+
+		h6 {
+			padding-left: 50px; 
+		}
+	}
+
+	.pin1 {
+		top: 70%; bottom: auto;
+		right: 50%; left: auto;
+	}
+
+	.pin2 {
+		top: 60%; bottom: auto;
+		right: 30%; left: auto;
+	}
+
+	.pin3 {
+		top: 20%; bottom: auto;
+		left: 20%; right: auto;
+	}
+
+	.expandedPin {
+		padding: 15px;
+		height: auto;
+		width: auto;
+		min-height: 400px;
+		min-width: 300px; 
+		// TODO: replace this background image with a vector path
+		background-image: url('../images/map_item_background.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+
+		.address {
+			text-align: center;
+
+			h5 {
+				margin: 5px;
+			}
+
+			.address1 {
+				color: $primaryColor;
+				font-weight: bold;
+			}
+		}
+
+		.houseImage {
+		 	height: auto;
+		 	width: 300px;
+		}
+	}
+}
