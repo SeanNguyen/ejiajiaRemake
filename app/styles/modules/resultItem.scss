@@ -3,11 +3,11 @@
 
 .resultItem {
 	position: relative;
+	outline: solid 1px $grey;
 			
 	.houseImage {
 		width: 100%;
 		height: auto;
-		outline: solid 1px $grey;
 	}
 
 	.likeButton {
