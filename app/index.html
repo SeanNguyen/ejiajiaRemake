@@ -70,139 +70,92 @@
             <div class="row resultList">
 
               <!-- FEATURE RESULT -->
-              <div class="featureResult result col col-xs-12">
+              <div class="featureResult resultItem col col-xs-12">
 
                 <!-- Triangle Conner -->
                 <div id="triangle"></div>
                 <div id="text"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 精选</div>
                 <!-- End triangle conner -->
 
-                <img class="houseImage" src="./images/house.jpg">
+                <div class="featureDetailContainer">
+                  <img class="houseImage" src="./images/house.jpg">
 
-                <div class="featureDetail">
-                  <div class="address">
-                    <h4>75 Ferrington Street,</h4>
-                    <h5>Palyville, Bostone</h5>
+                  <div class="featureDetail hidden-xs hidden-sm">
+                    <div class="address">
+                      <h4>75 Ferrington Street,</h4>
+                      <h5>Palyville, Bostone</h5>
+                    </div>
+
+                    <div class="detailItem">
+                      <img src="./images/icon_bedRoom.png" class="img img-responsive">
+                      <h4>3</h4>
+                    </div>
+
+                    <div class="detailItem">
+                      <img src="./images/icon_bathRoom.png" class="img img-responsive">
+                      <h4>2</h4>
+                    </div>
+
+                    <div class="detailItem">
+                      <img src="./images/icon_direction.png" class="img img-responsive">
+                      <h4>北东</h4>
+                    </div>
+
+                    <div class="detailItem">
+                      <img src="./images/icon_bus.png" class="img img-responsive">
+                      <h4>0.5 公里</h4>
+                    </div>
+
+                    <h3 id="price">1, 305 万</h3>
                   </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_bedRoom.png" class="img img-responsive">
-                    3
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_bathRoom.png" class="img img-responsive">
-                    2
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_direction.png" class="img img-responsive">
-                    北东
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_bus.png" class="img img-responsive">
-                    <h5>0.5 公里</h5>
-                  </div>
-
-                  <h3 id="price">1, 305 万</h3>
                 </div>
 
+                <!-- all the components below will be absolute -->
                 <button class="likeButton">
-                  <img class="img img-responsive" src="./images/icon_liked.png">
+                  <img class="img img-responsive" src="./images/icon_unliked.png">
                 </button>
 
-                <button class="compareButton">
-                  对比
+                <button class="compareButton visible-md-block visible-lg-block">
+                  <label>对比</label>
+                  <img src="./images/icon_tick.png">
                 </button>
 
-                <!-- Detail that shown on small screen -->
-                <div class="detail">
-                  <div class="row">
-                    <div class="col col-xs-8">
-                      <h5 class="address1">23 Hillview Avenue,</h5>
-                      <h5>Glendale Park, Singapore</h5>
-                    </div>
+                <div class="detailContainer hidden-md hidden-lg">
+                  <div class="address">
+                    <h5 class="address1">23 Hillview Avenue,</h5>
+                    <h5>Glendale Park, Singapore</h5>
+                  </div>
 
-                    <div class="col col-xs-4 busInfo">
-                      <img src="./images/icon_bus.png" class="img img-responsive">
-                      <h5>0.5 公里</h5>
-                    </div>
+                  <div class="busInfo">
+                    <img src="./images/icon_bus.png" class="img img-responsive">
+                    <h5>0.5 公里</h5>
                   </div>
                 </div>
 
                 <!-- non-absolute position detail -->
-                <div class="statistic">
+                <div class="statistic hidden-md hidden-lg">
                   <div class="detailItem">
                     <img src="./images/icon_bedRoom.png" class="img img-responsive">
-                    3
+                    <h5>3</h5>
                   </div>
 
                   <div class="detailItem">
                     <img src="./images/icon_bathRoom.png" class="img img-responsive">
-                    2
+                    <h5>2</h5>
                   </div>
 
                   <div class="detailItem">
                     <img src="./images/icon_direction.png" class="img img-responsive">
-                    北东
+                    <h5>北东</h5>
                   </div>
 
-                  <div class="price"><strong>1, 305 万</strong></div>
+                  <div class="price"><h5><strong>1, 305 万</strong></h5></div>
                 </div>
 
               </div>
               <!-- END FEATURE RESULT -->
 
-              <div class="result col col-xs-12 col-sm-6">
-                <img class="houseImage" src="./images/house.jpg">
-
-                <!-- all the components below will be absolute -->
-                <button class="likeButton">
-                  <img class="img img-responsive" src="./images/icon_liked.png">
-                </button>
-
-                <button class="compareButton liked">
-                  <label>对比</label>
-                  <img src="./images/icon_tick.png">
-                </button>
-
-                <div class="detail">
-                  <div class="row">
-                    <div class="col col-xs-8">
-                      <h5 class="address1">23 Hillview Avenue,</h5>
-                      <h5>Glendale Park, Singapore</h5>
-                    </div>
-
-                    <div class="col col-xs-4 busInfo">
-                      <img src="./images/icon_bus.png" class="img img-responsive">
-                      <h5>0.5 公里</h5>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- non-absolute position detail -->
-                <div class="statistic">
-                  <div class="detailItem">
-                    <img src="./images/icon_bedRoom.png" class="img img-responsive">
-                    3
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_bathRoom.png" class="img img-responsive">
-                    2
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_direction.png" class="img img-responsive">
-                    北东
-                  </div>
-
-                  <div class="price"><strong>1, 305 万</strong></div>
-                </div>
-              </div>
-
-              <div class="result col col-xs-12 col-sm-6">
+              <div class="resultItem col col-xs-12 col-sm-6">
                 <img class="houseImage" src="./images/house.jpg">
 
                 <!-- all the components below will be absolute -->
@@ -210,21 +163,20 @@
                   <img class="img img-responsive" src="./images/icon_unliked.png">
                 </button>
 
-                <button class="compareButton">
-                  对比
+                <button class="compareButton visible-md-block visible-lg-block">
+                  <label>对比</label>
+                  <img src="./images/icon_tick.png">
                 </button>
 
-                <div class="detail">
-                  <div class="row">
-                    <div class="col col-xs-8">
-                      <h5 class="address1">23 Hillview Avenue,</h5>
-                      <h5>Glendale Park, Singapore</h5>
-                    </div>
+                <div class="detailContainer">
+                  <div class="address">
+                    <h5 class="address1">23 Hillview Avenue,</h5>
+                    <h5>Glendale Park, Singapore</h5>
+                  </div>
 
-                    <div class="col col-xs-4 busInfo">
-                      <img src="./images/icon_bus.png" class="img img-responsive">
-                      <h5>0.5 公里</h5>
-                    </div>
+                  <div class="busInfo">
+                    <img src="./images/icon_bus.png" class="img img-responsive">
+                    <h5>0.5 公里</h5>
                   </div>
                 </div>
 
@@ -232,24 +184,24 @@
                 <div class="statistic">
                   <div class="detailItem">
                     <img src="./images/icon_bedRoom.png" class="img img-responsive">
-                    3
+                    <h5>3</h5>
                   </div>
 
                   <div class="detailItem">
                     <img src="./images/icon_bathRoom.png" class="img img-responsive">
-                    2
+                    <h5>2</h5>
                   </div>
 
                   <div class="detailItem">
                     <img src="./images/icon_direction.png" class="img img-responsive">
-                    北东
+                    <h5>北东</h5>
                   </div>
 
-                  <div class="price"><strong>1, 305 万</strong></div>
+                  <div class="price"><h5><strong>1, 305 万</strong></h5></div>
                 </div>
               </div>
 
-              <div class="result col col-xs-12 col-sm-6">
+              <div class="resultItem col col-xs-12 col-sm-6">
                 <img class="houseImage" src="./images/house.jpg">
 
                 <!-- all the components below will be absolute -->
@@ -257,21 +209,20 @@
                   <img class="img img-responsive" src="./images/icon_liked.png">
                 </button>
 
-                <button class="compareButton">
-                  对比
+                <button class="compareButton visible-md-block visible-lg-block liked">
+                  <label>对比</label>
+                  <img src="./images/icon_tick.png">
                 </button>
 
-                <div class="detail">
-                  <div class="row">
-                    <div class="col col-xs-8">
-                      <h5 class="address1">23 Hillview Avenue,</h5>
-                      <h5>Glendale Park, Singapore</h5>
-                    </div>
+                <div class="detailContainer">
+                  <div class="address">
+                    <h5 class="address1">23 Hillview Avenue,</h5>
+                    <h5>Glendale Park, Singapore</h5>
+                  </div>
 
-                    <div class="col col-xs-4 busInfo">
-                      <img src="./images/icon_bus.png" class="img img-responsive">
-                      <h5>0.5 公里</h5>
-                    </div>
+                  <div class="busInfo">
+                    <img src="./images/icon_bus.png" class="img img-responsive">
+                    <h5>0.5 公里</h5>
                   </div>
                 </div>
 
@@ -279,24 +230,24 @@
                 <div class="statistic">
                   <div class="detailItem">
                     <img src="./images/icon_bedRoom.png" class="img img-responsive">
-                    3
+                    <h5>3</h5>
                   </div>
 
                   <div class="detailItem">
                     <img src="./images/icon_bathRoom.png" class="img img-responsive">
-                    2
+                    <h5>2</h5>
                   </div>
 
                   <div class="detailItem">
                     <img src="./images/icon_direction.png" class="img img-responsive">
-                    北东
+                    <h5>北东</h5>
                   </div>
 
-                  <div class="price"><strong>1, 305 万</strong></div>
+                  <div class="price"><h5><strong>1, 305 万</strong></h5></div>
                 </div>
               </div>
 
-              <div class="result col col-xs-12 col-sm-6">
+              <div class="resultItem col col-xs-12 col-sm-6">
                 <img class="houseImage" src="./images/house.jpg">
 
                 <!-- all the components below will be absolute -->
@@ -304,21 +255,20 @@
                   <img class="img img-responsive" src="./images/icon_liked.png">
                 </button>
 
-                <button class="compareButton">
-                  对比
+                <button class="compareButton visible-md-block visible-lg-block liked">
+                  <label>对比</label>
+                  <img src="./images/icon_tick.png">
                 </button>
 
-                <div class="detail">
-                  <div class="row">
-                    <div class="col col-xs-8">
-                      <h5 class="address1">23 Hillview Avenue,</h5>
-                      <h5>Glendale Park, Singapore</h5>
-                    </div>
+                <div class="detailContainer">
+                  <div class="address">
+                    <h5 class="address1">23 Hillview Avenue,</h5>
+                    <h5>Glendale Park, Singapore</h5>
+                  </div>
 
-                    <div class="col col-xs-4 busInfo">
-                      <img src="./images/icon_bus.png" class="img img-responsive">
-                      <h5>0.5 公里</h5>
-                    </div>
+                  <div class="busInfo">
+                    <img src="./images/icon_bus.png" class="img img-responsive">
+                    <h5>0.5 公里</h5>
                   </div>
                 </div>
 
@@ -326,24 +276,24 @@
                 <div class="statistic">
                   <div class="detailItem">
                     <img src="./images/icon_bedRoom.png" class="img img-responsive">
-                    3
+                    <h5>3</h5>
                   </div>
 
                   <div class="detailItem">
                     <img src="./images/icon_bathRoom.png" class="img img-responsive">
-                    2
+                    <h5>2</h5>
                   </div>
 
                   <div class="detailItem">
                     <img src="./images/icon_direction.png" class="img img-responsive">
-                    北东
+                    <h5>北东</h5>
                   </div>
 
-                  <div class="price"><strong>1, 305 万</strong></div>
+                  <div class="price"><h5><strong>1, 305 万</strong></h5></div>
                 </div>
               </div>
 
-              <div class="result col col-xs-12 col-sm-6">
+              <div class="resultItem col col-xs-12 col-sm-6">
                 <img class="houseImage" src="./images/house.jpg">
 
                 <!-- all the components below will be absolute -->
@@ -351,21 +301,20 @@
                   <img class="img img-responsive" src="./images/icon_liked.png">
                 </button>
 
-                <button class="compareButton">
-                  对比
+                <button class="compareButton visible-md-block visible-lg-block liked">
+                  <label>对比</label>
+                  <img src="./images/icon_tick.png">
                 </button>
 
-                <div class="detail">
-                  <div class="row">
-                    <div class="col col-xs-8">
-                      <h5 class="address1">23 Hillview Avenue,</h5>
-                      <h5>Glendale Park, Singapore</h5>
-                    </div>
+                <div class="detailContainer">
+                  <div class="address">
+                    <h5 class="address1">23 Hillview Avenue,</h5>
+                    <h5>Glendale Park, Singapore</h5>
+                  </div>
 
-                    <div class="col col-xs-4 busInfo">
-                      <img src="./images/icon_bus.png" class="img img-responsive">
-                      <h5>0.5 公里</h5>
-                    </div>
+                  <div class="busInfo">
+                    <img src="./images/icon_bus.png" class="img img-responsive">
+                    <h5>0.5 公里</h5>
                   </div>
                 </div>
 
@@ -373,24 +322,24 @@
                 <div class="statistic">
                   <div class="detailItem">
                     <img src="./images/icon_bedRoom.png" class="img img-responsive">
-                    3
+                    <h5>3</h5>
                   </div>
 
                   <div class="detailItem">
                     <img src="./images/icon_bathRoom.png" class="img img-responsive">
-                    2
+                    <h5>2</h5>
                   </div>
 
                   <div class="detailItem">
                     <img src="./images/icon_direction.png" class="img img-responsive">
-                    北东
+                    <h5>北东</h5>
                   </div>
 
-                  <div class="price"><strong>1, 305 万</strong></div>
+                  <div class="price"><h5><strong>1, 305 万</strong></h5></div>
                 </div>
               </div>
 
-              <div class="result col col-xs-12 col-sm-6">
+              <div class="resultItem col col-xs-12 col-sm-6">
                 <img class="houseImage" src="./images/house.jpg">
 
                 <!-- all the components below will be absolute -->
@@ -398,21 +347,20 @@
                   <img class="img img-responsive" src="./images/icon_liked.png">
                 </button>
 
-                <button class="compareButton">
-                  对比
+                <button class="compareButton visible-md-block visible-lg-block liked">
+                  <label>对比</label>
+                  <img src="./images/icon_tick.png">
                 </button>
 
-                <div class="detail">
-                  <div class="row">
-                    <div class="col col-xs-8">
-                      <h5 class="address1">23 Hillview Avenue,</h5>
-                      <h5>Glendale Park, Singapore</h5>
-                    </div>
+                <div class="detailContainer">
+                  <div class="address">
+                    <h5 class="address1">23 Hillview Avenue,</h5>
+                    <h5>Glendale Park, Singapore</h5>
+                  </div>
 
-                    <div class="col col-xs-4 busInfo">
-                      <img src="./images/icon_bus.png" class="img img-responsive">
-                      <h5>0.5 公里</h5>
-                    </div>
+                  <div class="busInfo">
+                    <img src="./images/icon_bus.png" class="img img-responsive">
+                    <h5>0.5 公里</h5>
                   </div>
                 </div>
 
@@ -420,55 +368,69 @@
                 <div class="statistic">
                   <div class="detailItem">
                     <img src="./images/icon_bedRoom.png" class="img img-responsive">
-                    3
+                    <h5>3</h5>
                   </div>
 
                   <div class="detailItem">
                     <img src="./images/icon_bathRoom.png" class="img img-responsive">
-                    2
+                    <h5>2</h5>
                   </div>
 
                   <div class="detailItem">
                     <img src="./images/icon_direction.png" class="img img-responsive">
-                    北东
+                    <h5>北东</h5>
                   </div>
 
-                  <div class="price"><strong>1, 305 万</strong></div>
+                  <div class="price"><h5><strong>1, 305 万</strong></h5></div>
                 </div>
               </div>
 
-              <!-- Page navigation -->
-              <div class="col col-xs-12">
-                <div class="pageNav">
-                  <div class="item">
-                    <img src="./images/icon_arrow_left.png">  
+              <div class="resultItem col col-xs-12 col-sm-6">
+                <img class="houseImage" src="./images/house.jpg">
+
+                <!-- all the components below will be absolute -->
+                <button class="likeButton">
+                  <img class="img img-responsive" src="./images/icon_liked.png">
+                </button>
+
+                <button class="compareButton visible-md-block visible-lg-block liked">
+                  <label>对比</label>
+                  <img src="./images/icon_tick.png">
+                </button>
+
+                <div class="detailContainer">
+                  <div class="address">
+                    <h5 class="address1">23 Hillview Avenue,</h5>
+                    <h5>Glendale Park, Singapore</h5>
                   </div>
 
-                  <div class="item">
-                    <text>1</text>
-                  </div>
-
-                  <div class="item current">
-                    <text>2</text>
-                  </div>
-
-                  <div class="item">
-                    <text>3</text>
-                  </div>
-
-                  <div class="item">
-                    <text>...</text>
-                  </div>
-
-                  <div class="item">
-                    <text>10</text>
-                  </div>
-
-                  <div class="item">
-                    <img src="./images/icon_arrow_right.png">  
+                  <div class="busInfo">
+                    <img src="./images/icon_bus.png" class="img img-responsive">
+                    <h5>0.5 公里</h5>
                   </div>
                 </div>
+
+                <!-- non-absolute position detail -->
+                <div class="statistic">
+                  <div class="detailItem">
+                    <img src="./images/icon_bedRoom.png" class="img img-responsive">
+                    <h5>3</h5>
+                  </div>
+
+                  <div class="detailItem">
+                    <img src="./images/icon_bathRoom.png" class="img img-responsive">
+                    <h5>2</h5>
+                  </div>
+
+                  <div class="detailItem">
+                    <img src="./images/icon_direction.png" class="img img-responsive">
+                    <h5>北东</h5>
+                  </div>
+
+                  <div class="price"><h5><strong>1, 305 万</strong></h5></div>
+                </div>
               </div>
+
             </div>
           </div>
           <div class="main-map col col-md-5 visible-md-block visible-lg-block"></div>    

@@ -1,0 +1,9 @@
+@import '../config';
+@import 'resultItem';
+@import 'resultFeatureItem';
+
+.resultList {
+	.resultItem {
+		padding: 0;
+	}
+}

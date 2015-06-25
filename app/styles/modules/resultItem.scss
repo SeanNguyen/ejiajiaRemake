@@ -1,0 +1,125 @@
+@import '../config';
+
+.resultItem {
+	position: relative;
+			
+	.houseImage {
+		width: 100%;
+		height: auto;
+		outline: solid 1px $grey;
+	}
+
+	.likeButton {
+		position: absolute;
+		top: 20px; bottom: auto;
+		right: 15px; left: auto;
+
+		height: 50px;
+		width: 50px;
+
+		background: none;
+		outline: none;
+		border: none;
+		padding: 0;
+	}
+
+	.compareButton {
+		position: absolute;
+		top: 40%; bottom: auto;
+		right: 20px; left: auto;
+		height: 40px;
+		width: 40px;
+
+		border-radius: 50%;
+		border: none;
+		background-color: rgba(0,0,0, 0.7);
+		outline: none;
+
+		color: #FCFCFC;
+		font-size: 12px;
+		
+		img {
+			display: none;
+		}
+
+		label {
+			margin: 0;
+		}
+	}
+
+	.compareButton.liked {
+		background-color: rgba(84, 230, 215, 0.7);
+
+		img {
+			display: block;
+			margin-left: 5px;
+			height: auto;
+			width: 20px;
+		}
+
+		label {
+			display: none;
+		}
+	}
+
+	.detailContainer {
+		position: absolute;
+		top: auto; bottom: 40px; right: 0; left: 0;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		background: linear-gradient(rgba(0,0,0,0), #000);
+
+		h5 {
+			margin: 5px;
+			color: #FCFCFC;
+		}
+
+		.address1 {
+			color: $primaryColor;
+		}
+
+		.busInfo {
+			display: flex;
+			align-items: center;
+
+			img {				
+				height: 20px;
+			}
+
+			h5 {
+				margin: 5px;
+				color: #FCFCFC;
+			}
+		}
+	}
+
+	.statistic {
+		background-color: #FCFCFC;
+		height: 40px;
+		overflow: hidden;
+		padding: 10px;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+
+		.detailItem {
+			display: flex;
+			align-items: center;
+
+			img {
+				margin: 5px;
+
+				height: 14px;
+				width: auto;
+			}
+		}
+		.price {
+			float: right;
+			font-size: 14px;
+		}
+	}
+}

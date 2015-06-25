@@ -5,6 +5,7 @@
 @import 'config';
 @import './modules/ie-notifier';
 @import './modules/searchBar';
+@import './modules/resultList';
 
 body {
   //global settings
@@ -24,8 +25,6 @@ body {
   }
 
   .main-result {
-    height: 100px;
-    border: solid 1px #000;
   }
 
   .main-map {

@@ -1,0 +1,83 @@
+@import '../config';
+
+.featureResult {
+	position: relative;
+
+	.featureDetailContainer {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.houseImage {
+		flex-grow: 2;
+		height: auto;
+	}
+
+	.featureDetail {
+		width: 50%;
+		flex-grow: 1;
+
+		.address {
+			margin: 10px ;
+			border-bottom: solid 1px $grey;
+		}
+
+		.detailItem {
+			display: flex;
+			align-items: center;
+
+			img {
+				margin: 5px 10px;
+				width: 20px;
+				height: auto;
+			}
+		}
+	}
+
+	#price {
+		margin: 10px
+	}
+
+	.likeButton {
+		@media (min-width: $width-sm) {
+			top: 75px;
+		}
+	}
+
+	.compareButton {
+		@media (min-width: $width-sm) {
+			top: 150px;
+		}
+	}
+
+	#triangle 
+	{
+	    width: 0;
+		height: 0;
+		border-style: solid;
+		border-color: #00bebd transparent transparent transparent;
+	    position: absolute;
+	    border-width: 75px 150px 0 0;
+
+		@media (max-width: $width-xxs) {
+			border-width: 50px 100px 0 0;
+		}
+	}
+
+	#text {
+	    font-size: 20px;
+	    position: absolute;
+	    top: 20px; /* 50 - something related to line heigth */
+	    left: -30px; /* 50 - 142/2 - something related to line height */
+	    transform: rotate(-30deg);
+	    width: 142px; /* base width -> (100^2 + 100^2)^1/2 */
+	    text-align: center;
+	    color: #FCFCFC;
+
+	    @media (max-width: $width-xxs) {
+	    	top: 10px;
+	    	left: -40px;
+			font-size: 14px;
+		}
+	}
+}
