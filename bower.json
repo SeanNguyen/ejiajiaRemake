@@ -1,0 +1,8 @@
+{
+  "name": "ejiajia",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "~3.2.0",
+    "seiyria-bootstrap-slider": "~4.9.1"
+  }
+}

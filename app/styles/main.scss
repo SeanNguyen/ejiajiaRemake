@@ -1,0 +1,36 @@
+@import 'config';
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+//notification for IE users
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+@font-face {
+    font-family: "AdobeHeitiStd";
+    src: url(./fonts/AdobeHeitiStd-Regular.otf) format("truetype");
+}
+
+body {
+  color: #808080;
+
+  font-family: AdobeHeitiStd, sans-serif;
+
+  @import 'header';
+  @import 'filter';
+  @import 'result';
+  @import 'favorite';
+
+  @media (min-width: $mobileMaxWidth) {
+      padding-bottom: 150px;
+  }
+
+  .item {
+    overflow: hidden;
+  }
+}
