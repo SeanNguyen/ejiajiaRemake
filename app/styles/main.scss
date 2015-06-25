@@ -3,11 +3,44 @@
 // endbower
 
 @import 'config';
+@import './modules/ie-notifier';
 
 body {
   //global settings
   color: $defaultTextColor;
   font-family: AdobeHeitiStd, sans-serif;
+}
 
-  
+.main {
+
+  //layout
+  .main-search {
+    margin: 0 -15px;
+    height: 100px;
+    border: solid 1px #000;
+  }
+
+  .main-filter {
+    margin: 0 -15px;
+    height: 100px;
+    border: solid 1px #000;
+  }
+
+  .main-result {
+    height: 100px;
+    border: solid 1px #000;
+  }
+
+  .main-map {
+    height: 100px;
+    border: solid 1px #000;
+  }
+
+  .main-favourite {
+    position: fixed;
+    top: auto; bottom: 0; right: 0; left: 0;
+
+    height: 50px;
+    border: solid 1px #000;
+  }
 }
