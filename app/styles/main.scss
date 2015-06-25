@@ -21,11 +21,6 @@ body {
 
   font-family: AdobeHeitiStd, sans-serif;
 
-  @import 'header';
-  @import 'filter';
-  @import 'result';
-  @import 'favorite';
-
   @media (min-width: $mobileMaxWidth) {
       padding-bottom: 150px;
   }
