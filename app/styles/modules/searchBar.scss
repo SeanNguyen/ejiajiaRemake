@@ -1,6 +1,19 @@
+@import 'searchBox';
+
 .searchBar {
 	height: 80px;
 
 	display: flex;
 	align-items: center;
+
+	.logo {
+		height: 60px;
+		width: auto;
+		flex-shrink: 0;
+	}
+
+	a {
+		flex-shrink: 0;
+		margin: 10px;
+	}
 }
