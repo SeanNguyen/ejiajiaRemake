@@ -9,7 +9,7 @@ var TEXT_COLLAPSE = '隐藏';
 //init will be in expand state
 var filterExpandState = EXPAND_STATE.COLLAPSED;
 
-var widthSm = 768;
+var widthSm = 992;
 
 //when implement further, anytime the filter list change then call this function so it update the filter bar. you impliment it
 function onListChange() {

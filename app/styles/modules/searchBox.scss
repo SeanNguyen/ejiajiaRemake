@@ -6,6 +6,10 @@
 
 	border: solid 2px $grey;
 
+	@media (max-width: $width-sm) {
+		border-width: 1px;
+	}
+
 	display: flex;
 	align-items: center;
 

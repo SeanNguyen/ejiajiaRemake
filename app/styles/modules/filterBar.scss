@@ -148,6 +148,11 @@
 
 	    	button {
 	    		width: 30%;
+
+	    		border: none;
+	    		outline: none;
+	    		background-color: $primaryColor;
+	    		color: $white;
 	    	}
 
 	    	input[type='text'] {

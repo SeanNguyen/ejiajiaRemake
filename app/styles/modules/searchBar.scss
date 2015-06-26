@@ -12,6 +12,10 @@
 		height: 60px;
 		width: auto;
 		flex-shrink: 0;
+
+		@media (max-width: $width-sm) {
+			display: none;
+		}
 	}
 
 	a {

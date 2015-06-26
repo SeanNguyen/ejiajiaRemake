@@ -76,6 +76,10 @@
 		h5 {
 			margin: 5px;
 			color: #FCFCFC;
+
+			@media (min-width: $width-sm) {
+				margin-left: 20px;
+			}
 		}
 
 		.address1 {
