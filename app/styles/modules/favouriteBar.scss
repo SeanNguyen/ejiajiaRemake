@@ -13,8 +13,7 @@
     background-color: $secondaryColor;
 
     widows: 100%;
-    @media (max-width: $width-md)
-    {
+    @media (max-width: $width-md) {
         display: none;
     }
     .item
@@ -29,12 +28,7 @@
         padding-top: 20px;
 
         border-right: solid 1px $grey;
-        img
-        {
-            width: auto;
-            height: 30px;
-            margin: 10px 35px;
-        }
+        
         h5
         {
             font-weight: bold;
@@ -42,6 +36,22 @@
             margin-top: 0;
 
             text-align: center;
+        }
+
+        button {
+            width: 30px;
+            height: 30px;
+            margin: 10px 35px;
+
+            border: none;
+            outline: none;
+            padding: 0;
+            background-color: transparent;
+
+            img {
+                height: 100%;
+                width: auto;    
+            }
         }
     }
     .houseItem
@@ -76,6 +86,8 @@
             }
             .connerRemoveButtom
             {
+                margin: 0;
+                padding: 0;
                 position: absolute;
                 top: -10px;
                 right: -10px;
@@ -86,6 +98,16 @@
 
                 width: 20px;
                 height: 20px;
+
+                background-color: transparent;
+                border: none;
+                outline: none;
+
+                img
+            {
+                width: auto;
+                height: 100%;
+            }
             }
         }
         .description
