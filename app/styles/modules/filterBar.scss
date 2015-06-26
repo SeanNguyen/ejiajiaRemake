@@ -1,66 +1,172 @@
 @import '../config';
 
 .filterBar {
-	background-color: $primaryColor;
-	padding: 10px;
+	.staticBar {
+		background-color: $primaryColor;
+		padding: 10px;
 
-	display: flex;
-	align-items: center;
+		display: flex;
+		align-items: center;
 
-	.filter-expandButton {
-		flex-shrink: 0;
-		border: none;
-		outline: none;
-		background-color: transparent;
-		border-right: solid 2px #FFF;
-		border-radius: 0;
+		.filter-expandButton {
+			flex-shrink: 0;
+			border: none;
+			outline: none;
+			background-color: transparent;
+			border-right: solid 2px #FFF;
+			border-radius: 0;
 
-		color: $white;
-		font-weight: bold;
+			color: $white;
+			font-weight: bold;
 
-		img {
-			width: 10px;
-			height: auto;
+			img {
+				width: 10px;
+				height: auto;
+			}
+		}
+
+		.selectedOptionContainer {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+
+			.selectedItem {
+				margin: 5px;
+
+				height: 25px;
+				background-color: $white;
+				border: solid 1px $grey;
+
+				display: flex;
+				align-items: center;
+
+				.categoryImage {
+					margin: 10px;
+					height: 15px;
+					width: auto;
+				}
+
+				.removeButton {
+					margin: 10px;
+					height: 10px;
+					width: auto;
+				}
+
+				button {
+					border: none;
+					outline: none;
+					background-color: transparent;
+					padding: 0;
+				}
+
+				h5 {
+					font-size: 12px;
+				}
+			}
 		}
 	}
 
-	.selectedOptionContainer {
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
+	.filterOptions {
+	    display: none;
+	    width: 100%;
 
-		.selectedItem {
-			margin: 5px;
+	    @media (min-width: $width-md) {
+	        >.row>.rightCol {
+	            border-left: solid $grey 1px;
+	        }
+	    }
 
-			height: 25px;
-			background-color: $white;
-			border: solid 1px $grey;
+	    .item {
+	        border-bottom: solid 1px $grey;
+	        padding-top: 5px;
+	        padding-bottom: 5px; 
+	        padding-left: 15px;
 
-			display: flex;
-			align-items: center;
-
-			.categoryImage {
-				margin: 10px;
-				height: 15px;
-				width: auto;
+			.line {
+				display: flex;
+				align-items: center;
 			}
 
-			.removeButton {
-				margin: 10px;
-				height: 10px;
-				width: auto;
+			.solid {
+				flex-shrink: 0;
 			}
 
-			button {
-				border: none;
-				outline: none;
-				background-color: transparent;
-				padding: 0;
+			.fieldNameContainer {
+				width: 50%;
+
+				display: flex;
+				align-items: center;
+				flex-shrink: 0;
 			}
 
-			h5 {
-				font-size: 12px;
+			.fieldImage {
+		            width: 20px;
+		            height: auto;
+
+		            margin: 10px;
+		        }
+
+			select {
+				width: 50%;
+				margin: 10px 0;
 			}
-		}
+
+	        .item {
+	            border: none;
+	        }
+
+	        input[type='text'] {
+	    		margin: 10px 0;
+	    	}
+	    }
+
+	    .priceField {
+	    	.fieldNameContainer {
+	    		width: 70%;
+	    	}
+
+	    	button {
+	    		width: 30%;
+	    	}
+
+	    	input[type='text'] {
+	    		width: 50%;
+	    	}
+
+	        //slider styling
+	        .slider-handle {
+	            background-color: $primaryColor;
+	            background-image: none;
+	        }
+
+	        .slider-selection {
+	            background-image: none;
+	            background-color: $lightPrimaryColor;
+	        }
+
+	        .slider-horizontal {
+	            width: 100%;
+	        }
+	    }
+
+	    .additional {
+	        border: none;
+
+	        .fieldName {
+	            width: calc(100% - 40px);
+	        }
+	    }
+
+	    button {
+	        width: 100%;
+	        background-color: $primaryColor;
+	        font-size: 14px;
+	        border: none;
+	        outline: none;
+	        color: #FCFCFC;
+	        border-radius: 0;
+	        font-weight: bold;
+	        box-shadow: 0px 0px 10px $grey;
+	    }
 	}
 }

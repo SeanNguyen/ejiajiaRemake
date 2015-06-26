@@ -58,59 +58,288 @@
       <!-- Filter BEGIN -->
       <div class="container main-filter">
         <div class="filterBar">
-          <button class="btn btn-default filter-expandButton" onclick="toggleFilterOption()">筛选条件 <img src="./images/icon_arrowDown.png" class="icon"></button> 
+          <div class="staticBar">
+            <button class="btn btn-default filter-expandButton" onclick="toggleFilterOption()">筛选条件 <img src="./images/icon_arrowDown.png" class="icon"></button> 
 
-          <!-- List of selected filter -->
-          <div class="selectedOptionContainer">
-            <div class="selectedItem">
-              <img class="categoryImage" src="./images/icon_price.png">
-              <h5>俄罗斯</h5>
-              <button>
-                <img class="removeButton" src="./images/icon_remove.png">
-              </button>
+            <!-- List of selected filter -->
+            <div class="selectedOptionContainer">
+              <div class="selectedItem">
+                <img class="categoryImage" src="./images/icon_price.png">
+                <h5>俄罗斯</h5>
+                <button>
+                  <img class="removeButton" src="./images/icon_remove.png">
+                </button>
+              </div>
+
+              <div class="selectedItem">
+                <img class="categoryImage" src="./images/icon_bathRoom.png">
+                <h5>2</h5>
+                <button>
+                  <img class="removeButton" src="./images/icon_remove.png">
+                </button>
+              </div>
+              
+              <div class="selectedItem">
+                <img class="categoryImage" src="./images/icon_bedRoom.png">
+                <h5>3</h5>
+                <button>
+                  <img class="removeButton" src="./images/icon_remove.png">
+                </button>
+              </div>
+              
+              <div class="selectedItem">
+                <img class="categoryImage" src="./images/icon_area.png">
+                <h5>私宅/别墅</h5>
+                <button>
+                  <img class="removeButton" src="./images/icon_remove.png">
+                </button>
+              </div>
+              
+              <div class="selectedItem">
+                <img class="categoryImage" src="./images/icon_size.png">
+                <h5>600~700平</h5>
+                <button>
+                  <img class="removeButton" src="./images/icon_remove.png">
+                </button>
+              </div>
+              
+              <div class="selectedItem">
+                <img class="categoryImage" src="./images/icon_direction.png">
+                <h5>北</h5>
+                <button>
+                  <img class="removeButton" src="./images/icon_remove.png">
+                </button>
+              </div>
+
+              <!-- <button id="expandButton" onclick="toggleFilter()">与 4 个筛选...</button> -->
+            </div>
+          </div>
+
+          <div class="filterOptions">
+            <div class="row">
+              <div class="col col-xs-12 col-md-6">
+                <div class="item ">
+                  <div class="line">
+                    <div class="fieldNameContainer">
+                      <img src=".//images/icon_tag.png" class="fieldImage">
+                      <div class="fieldName">状态</div>
+                    </div>
+
+                    <select class="form-control">
+                      <option>不限</option>
+                      <option>在售</option>
+                      <option>预售</option>
+                    </select>
+                  </div>
+                  </div>
+                  
+                <div class="item ">
+                  <div class="line">
+                    <div class="fieldNameContainer">
+                      <img src=".//images/icon_area.png" class="fieldImage">
+                      <div class="fieldName">类型</div>
+                    </div>
+
+                    <select class="form-control">
+                      <option>不限</option>
+                      <option>有地住宅</option>
+                      <option>住宅</option>
+                      <option>公寓</option>
+                      <option>空中别墅</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="item areaField">
+                  <div class="line">
+                    <div class="fieldNameContainer">
+                      <img src=".//images/icon_size.png" class="fieldImage">
+                      <div class="fieldName">建筑面积</div>
+                    </div>
+                    
+                    <select class="form-control">
+                      <option>不限</option>
+                      <option>100 平方米以下</option>
+                      <option>100-300 平方米</option>
+                      <option>300-500 平方米</option>
+                      <option>500-700 平方米</option>
+                      <option>700-900 平方米</option>
+                      <option>900 平方米以上</option>
+                    </select>
+                  </div>
+                  
+                  <div class="line">
+                    <input class="form-control" type="text">
+                    <span class="solid">&nbsp;-&nbsp;</span>
+                    <input class="form-control" type="text">
+                    <span class="solid">&nbsp;平米&nbsp;</span>
+                  </div>
+                </div>
+
+                <div class="item priceField"=>
+                  <div class="line">
+                    <div class="fieldNameContainer">
+                      <img src=".//images/icon_price.png" class="fieldImage">
+                      <div class="fieldName">总价 (元）</div>
+                    </div>
+
+                    <button class="btn btn-default">确定</button>
+                  </div>
+
+                  <div class="line">
+                    <input class="form-control" type="text" placeholder="下限">
+                    <span class="solid">&nbsp;-&nbsp;</span>
+                    <input class="form-control" type="text" placeholder="上限">
+                  </div>
+                  
+                  <input id="priceSlider" type="text" class="span2 " value="" data-slider-handle="square" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[0,450]" data-slider-tooltip="hide"/>
+                </div>
+              </div>
+
+              <div class="col col-xs-12 col-md-6 rightCol">
+                <div class="item">
+                  <div class="row">
+                    <div class="col col-xs-6 leftCol">
+                      <div class="item ">
+                        <div class="line">
+                          <img src=".//images/icon_bedRoom.png" class="fieldImage">
+                          <div class="fieldName">卧室</div>
+                        </div>
+                        <select class="form-control">
+                          <option>不限</option>
+                          <option>1+</option>
+                          <option>2+</option>
+                          <option>3+</option>
+                          <option>4+</option>
+                          <option>5+</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col col-xs-6 rightCol">
+                      <div class="item ">
+                        <div class="line">
+                          <img src=".//images/icon_bathRoom.png" class="fieldImage">
+                          <div class="fieldName">浴室</div>
+                        </div>
+                        <select class="form-control">
+                          <option>不限</option>
+                          <option>1+</option>
+                          <option>2+</option>
+                          <option>3+</option>
+                          <option>4+</option>
+                          <option>5+</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item ">
+                  <div class="row">
+                    <div class="col col-xs-6 leftCol">
+                      <div class="item">
+                        <div class="line">
+                          <img src=".//images/icon_direction.png" class="fieldImage">
+                          <div class="fieldName">朝向</div>
+                        </div>
+                        <select class="form-control">
+                          <option>不限</option>
+                          <option>东</option>
+                          <option>南</option>
+                          <option>西</option>
+                          <option>北</option>
+                          <option>东北</option>
+                          <option>东南</option>
+                          <option>西南</option>
+                          <option>西北</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col col-xs-6 rightCol">
+                      <div class="item ">
+                        <div class="line">
+                          <img src=".//images/icon_document.png" class="fieldImage">
+                          <div class="fieldName">地契</div>
+                        </div>
+                        <select class="form-control">
+                          <option>不限</option>
+                          <option>99 年</option>
+                          <option>103 年</option>
+                          <option>999 年</option>
+                          <option>永久地契</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item " id="additional">
+                    <div class="line">
+                      <img src=".//images/icon_additional.png" class="fieldImage">
+                      <div class="fieldName"><strong>配套设施</strong> (您可以通过搜索属性的特定设施的缩小搜索范围)</div>
+                    </div>
+
+                       <div class="checkbox">
+                          <label>
+                            <input type="checkbox" class="form-control"> 游泳池
+                          </label>
+                        </div>
+
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" class="form-control"> 烧烤坑
+                          </label>
+                        </div>
+
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" class="form-control"> 24小时保安
+                          </label>
+                        </div>
+
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" class="form-control"> 桑拿
+                          </label>
+                        </div>
+
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" class="form-control"> 健身房
+                          </label>
+                        </div>
+
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" class="form-control"> 按摩浴缸
+                        </label>
+                      </div>
+
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" class="form-control"> 体育设施
+                        </label>
+                      </div>
+
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" class="form-control"> 网球场
+                        </label>
+                      </div>
+
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" class="form-control"> 会所
+                        </label>
+                      </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="selectedItem">
-              <img class="categoryImage" src="./images/icon_bathRoom.png">
-              <h5>2</h5>
-              <button>
-                <img class="removeButton" src="./images/icon_remove.png">
-              </button>
-            </div>
-            
-            <div class="selectedItem">
-              <img class="categoryImage" src="./images/icon_bedRoom.png">
-              <h5>3</h5>
-              <button>
-                <img class="removeButton" src="./images/icon_remove.png">
-              </button>
-            </div>
-            
-            <div class="selectedItem">
-              <img class="categoryImage" src="./images/icon_area.png">
-              <h5>私宅/别墅</h5>
-              <button>
-                <img class="removeButton" src="./images/icon_remove.png">
-              </button>
-            </div>
-            
-            <div class="selectedItem">
-              <img class="categoryImage" src="./images/icon_size.png">
-              <h5>600~700平</h5>
-              <button>
-                <img class="removeButton" src="./images/icon_remove.png">
-              </button>
-            </div>
-            
-            <div class="selectedItem">
-              <img class="categoryImage" src="./images/icon_direction.png">
-              <h5>北</h5>
-              <button>
-                <img class="removeButton" src="./images/icon_remove.png">
-              </button>
-            </div>
-
-            <!-- <button id="expandButton" onclick="toggleFilter()">与 4 个筛选...</button> -->
+            <button class="btn btn-default">條件搜索</button>        
           </div>
         </div>
       </div>
