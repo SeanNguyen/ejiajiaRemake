@@ -17,7 +17,9 @@ body {
 }
 
 .main {
-  margin-bottom: 150px;
+  @media (min-width: $width-sm) {
+    margin-bottom: 150px;
+  }
 
   //layout
   .main-search {

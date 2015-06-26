@@ -9,7 +9,7 @@ var TEXT_COLLAPSE = '隐藏';
 //init will be in expand state
 var filterExpandState = EXPAND_STATE.COLLAPSED;
 
-var phoneMaxWidth = 480;
+var widthSm = 768;
 
 //when implement further, anytime the filter list change then call this function so it update the filter bar. you impliment it
 function onListChange() {
@@ -33,8 +33,13 @@ function toggleFilter() {
 function toggleFilterOption() {
 	if($('.filterOptions').css('display') === 'none') {
 		$('.filterOptions').css({ 'display': 'block'});
+
+		if(Math.max( $(window).width(), window.innerWidth) <= widthSm) {
+			$('.main-result').css({ 'display': 'none'});
+		}
 	} else {
 		$('.filterOptions').css({ 'display': 'none'});
+		$('.main-result').css({ 'display': 'block'});
 	}
 }
 
