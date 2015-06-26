@@ -23,6 +23,11 @@
 				width: 10px;
 				height: auto;
 			}
+
+			@media (max-width: $width-md) {
+				width: 100%;
+				border: none;
+			}
 		}
 
 		.selectedOptionContainer {
