@@ -113,6 +113,25 @@
 
 	        .item {
 	            border: none;
+	            width: 50%;
+	            padding-left: 0;
+
+	            .fieldImage {
+	            	height: 15px;
+	            	width: auto;
+	            }
+
+	            select {
+	            	width: 100%;
+	            }
+	        }
+
+	        .item.leftItem {
+	        	padding-right: 10px;
+	        }
+
+	        .item.rightItem {
+	        	padding-left: 10px;
 	        }
 
 	        input[type='text'] {
@@ -183,6 +202,10 @@
 				width: 50%;
 				height: 40px;
 				margin: 0;
+			}
+
+			.checkbox {
+				padding-left: 15px;
 			}
 	    }
 
