@@ -8,7 +8,7 @@
 @import './modules/resultList';
 @import './modules/map';
 @import './modules/filterBar';
-
+@import './modules/favouriteBar';
 
 body {
   //global settings
@@ -17,6 +17,7 @@ body {
 }
 
 .main {
+  margin-bottom: 150px;
 
   //layout
   .main-search {

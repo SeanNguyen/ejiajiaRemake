@@ -1,0 +1,135 @@
+@import '../config';
+
+.favouriteBar {
+	position: fixed;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 150px;
+    padding: 10px;
+
+    background-color: $secondaryColor;
+
+    widows: 100%;
+    @media (max-width: $width-md)
+    {
+        display: none;
+    }
+    .item
+    {
+        float: left;
+
+        height: 130px;
+    }
+    .quitArea
+    {
+        width: 100px;
+        padding-top: 20px;
+
+        border-right: solid 1px $grey;
+        img
+        {
+            width: auto;
+            height: 30px;
+            margin: 10px 35px;
+        }
+        h5
+        {
+            font-weight: bold;
+
+            margin-top: 0;
+
+            text-align: center;
+        }
+    }
+    .houseItem
+    {
+        position: relative;
+
+        overflow: visible;
+
+        margin: 0 20px;
+        padding-top: 10px;
+
+        text-align: center;
+        :hover
+        {
+            .houseInfo
+            {
+                .connerRemoveButtom
+                {
+                    display: block;
+                }
+            }
+        }
+        .houseInfo
+        {
+            position: relative;
+
+            height: 80px;
+            img
+            {
+                width: auto;
+                height: 100%;
+            }
+            .connerRemoveButtom
+            {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                bottom: auto;
+                left: auto;
+
+                display: none;
+
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .description
+        {
+            font-size: 12px;
+
+            margin-top: 5px;
+            margin-bottom: 0;
+
+            text-align: center;
+        }
+        .title
+        {
+            font-weight: bold;
+
+            color: $primaryColor;
+        }
+    }
+    .houseItem:hover
+    {
+        .connerRemoveButtom
+        {
+            display: block;
+        }
+    }
+    .moreInfoArea
+    {
+        float: right;
+
+        width: 200px;
+
+        text-align: center;
+        button
+        {
+            font-size: 12px;
+            font-weight: bold;
+
+            width: 100px;
+            height: 30px;
+
+            color: #fcfcfc;
+            border: none;
+            outline: none;
+            background-color: $darkPrimaryColor;
+        }
+    }
+}

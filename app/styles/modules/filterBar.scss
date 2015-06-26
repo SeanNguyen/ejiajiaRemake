@@ -134,6 +134,10 @@
 	    	}
 
 	        //slider styling
+	        .slider {
+	        	height: 40px;
+	        }
+
 	        .slider-handle {
 	            background-color: $primaryColor;
 	            background-image: none;
@@ -145,7 +149,8 @@
 	        }
 
 	        .slider-horizontal {
-	            width: 100%;
+	            width: 90%;
+	            margin-left: 5%;
 	        }
 	    }
 
