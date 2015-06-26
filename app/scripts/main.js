@@ -44,3 +44,18 @@ function swapElement(element1, element2) {
 
 //load slider component
 $("#priceSlider").slider({});
+
+
+//apply chinese font
+$youziku.load("label", "8800337e3fa7441abaa76b0539b577fb", "Microsoft_YaHei");
+$youziku.load("h1", "8800337e3fa7441abaa76b0539b577fb", "Microsoft_YaHei");
+$youziku.load("h2", "8800337e3fa7441abaa76b0539b577fb", "Microsoft_YaHei");
+$youziku.load("h3", "8800337e3fa7441abaa76b0539b577fb", "Microsoft_YaHei");
+$youziku.load("h4", "8800337e3fa7441abaa76b0539b577fb", "Microsoft_YaHei");
+$youziku.load("h5", "8800337e3fa7441abaa76b0539b577fb", "Microsoft_YaHei");
+$youziku.load("h6", "8800337e3fa7441abaa76b0539b577fb", "Microsoft_YaHei");
+$youziku.load("input", "8800337e3fa7441abaa76b0539b577fb", "Microsoft_YaHei");
+
+$youziku.load(".featureConnerText", "b94f842897f14998ba7ef2a5dd301e33", "jdzhonyuanjian");
+
+$youziku.draw();

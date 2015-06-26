@@ -15,6 +15,9 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
+    <script type="text/javascript" src="http://www.youziku.com/webfont/FastJS/8800337e3fa7441abaa76b0539b577fb.js"></script>
+    <script type="text/javascript" src="http://www.youziku.com/webfont/FastJS/b94f842897f14998ba7ef2a5dd301e33.js"></script>
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -116,8 +119,8 @@
           </div>
 
           <form class="filterOptions" action="">
-            <div class="row">
-              <div class="col col-xs-12 col-md-6">
+            <div class="colContainer">
+              <div class="leftCol">
                 <div class="item ">
                   <div class="line">
                     <div class="fieldNameContainer">
@@ -172,7 +175,7 @@
                     <input class="form-control" type="text">
                     <span class="solid">&nbsp;-&nbsp;</span>
                     <input class="form-control" type="text">
-                    <span class="solid">&nbsp;平米&nbsp;</span>
+                    <span class="solid">&nbsp;平方米&nbsp;</span>
                   </div>
                 </div>
 
@@ -183,7 +186,7 @@
                       <div class="fieldName">总价 (元）</div>
                     </div>
 
-                    <button class="btn btn-default">确定</button>
+                    <button class="btn btn-default">不限</button>
                   </div>
 
                   <div class="line">
@@ -198,7 +201,7 @@
                 </div>
               </div>
 
-              <div class="col col-xs-12 col-md-6 rightCol">
+              <div class="rightCol">
                 <div class="item">
                   <div class="line">
                     <div class="item leftItem">
@@ -356,7 +359,7 @@
 
                 <!-- Triangle Conner -->
                 <div id="triangle"></div>
-                <div id="text"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 精选</div>
+                <div id="text" class="featureConnerText"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 精选</div>
                 <!-- End triangle conner -->
 
                 <div class="featureDetailContainer">
