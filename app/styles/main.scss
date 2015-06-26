@@ -1,14 +1,8 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
-
 @import './config';
-@import './modules/ie-notifier';
-@import './modules/searchBar';
-@import './modules/resultList';
-@import './modules/map';
-@import './modules/filterBar';
-@import './modules/favouriteBar';
 
 body {
   //global settings
@@ -44,3 +38,10 @@ body {
     border: solid 1px #000;
   }
 }
+
+@import './modules/ie-notifier';
+@import './modules/searchBar';
+@import './modules/resultList';
+@import './modules/map';
+@import './modules/filterBar';
+@import './modules/favouriteBar';
