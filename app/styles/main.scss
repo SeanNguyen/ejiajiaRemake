@@ -63,6 +63,9 @@ html, body {
     bottom: 0;
     left: 0;
     
+    //hide at the beginning
+    display: none;
+
     @media(max-width: $width-sm) {
       display: none;
     }
