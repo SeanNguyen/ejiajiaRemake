@@ -4,16 +4,15 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 @import './config';
 
-body {
+html, body {
   //global settings
   color: $defaultTextColor;
-  // font-family: AdobeHeitiStd, sans-serif;
+  height: 100%;
 }
 
 .main {
-  @media (min-width: $width-md) {
-    margin-bottom: 150px;
-  }
+  height: 100%;
+  overflow: hidden;
 
   //layout
   .main-search {
@@ -23,11 +22,29 @@ body {
     padding: 0;
   }
 
+  .result-map-group {
+    height: calc(100% - 150px);
+    padding: 0;
+  }
+
   .main-result {
+    margin: 0;
+    max-height: 100%;
+    width: 60%;
+    overflow-y: scroll;
+    float: left;
+    
+    .content::-webkit-scrollbar { 
+      display: none;
+    }
   }
 
   .main-map {
+    margin: 0;
     padding: 0;
+    height: 100%;
+    width: 40%;
+    float: left;
   }
 
   .main-favourite {

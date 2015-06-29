@@ -5,7 +5,7 @@
     <title>ejiajia</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="shortcut icon" href="./ejiajia.ico">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -344,33 +344,81 @@
       <!-- Filer END -->
 
       <!-- ResultList BEGIN -->
-      <div class="container">
-        <div class="row">
-          <div class="main-result col col-md-7">
-            <div class="row resultList">
-                <div class="col col-xs-12 resultBar">
-                  <h6>
-                    共找到 1250 栋房源
-                  </h6>
-                </div>
+      <div class="container result-map-group">
+          <div class="main-result">
+            <div class="container-fluid">
+              <div class="row resultList">
+                  <div class="col col-xs-12 resultBar">
+                    <h6>
+                      共找到 1250 栋房源
+                    </h6>
+                  </div>
 
-              <!-- FEATURE RESULT -->
-              <div class="featureResult resultItem col col-xs-12">
+                <!-- FEATURE RESULT -->
+                <div class="featureResult resultItem col col-xs-12">
 
-                <!-- Triangle Conner -->
-                <div id="triangle"></div>
-                <div id="text" class="featureConnerText"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 精选</div>
-                <!-- End triangle conner -->
+                  <!-- Triangle Conner -->
+                  <div id="triangle"></div>
+                  <div id="text" class="featureConnerText"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 精选</div>
+                  <!-- End triangle conner -->
 
-                <div class="featureDetailContainer">
-                  <img class="houseImage" src="./images/house.jpg">
+                  <div class="featureDetailContainer">
+                    <img class="houseImage" src="./images/house.jpg">
 
-                  <div class="featureDetail hidden-xs hidden-sm">
+                    <div class="featureDetail hidden-xs hidden-sm">
+                      <div class="address">
+                        <h4>75 Ferrington Street,</h4>
+                        <h5>Palyville, Bostone</h5>
+                      </div>
+
+                      <div class="detailItem">
+                        <img src="./images/icon_bedRoom.png" class="img img-responsive">
+                        <h5>3</h5>
+                      </div>
+
+                      <div class="detailItem">
+                        <img src="./images/icon_bathRoom.png" class="img img-responsive">
+                        <h5>2</h5>
+                      </div>
+
+                      <div class="detailItem">
+                        <img src="./images/icon_direction.png" class="img img-responsive">
+                        <h5>北东</h5>
+                      </div>
+
+                      <div class="detailItem">
+                        <img src="./images/icon_bus.png" class="img img-responsive">
+                        <h5>0.5 公里</h5>
+                      </div>
+
+                      <h4 id="price">1, 305 万</h4>
+                    </div>
+                  </div>
+
+                  <!-- all the components below will be absolute -->
+                  <button class="likeButton">
+                    <img class="img img-responsive" src="./images/icon_unliked.png">
+                  </button>
+
+                  <button class="compareButton visible-md-block visible-lg-block">
+                    <label>对比</label>
+                    <img src="./images/icon_tick.png">
+                  </button>
+
+                  <div class="detailContainer hidden-md hidden-lg">
                     <div class="address">
-                      <h4>75 Ferrington Street,</h4>
-                      <h5>Palyville, Bostone</h5>
+                      <h5 class="address1">23 Hillview Avenue,</h5>
+                      <h5>Glendale Park, Singapore</h5>
                     </div>
 
+                    <div class="busInfo">
+                      <img src="./images/icon_bus.png" class="img img-responsive">
+                      <h5>0.5 公里</h5>
+                    </div>
+                  </div>
+
+                  <!-- non-absolute position detail -->
+                  <div class="infoBar hidden-md hidden-lg">
                     <div class="detailItem">
                       <img src="./images/icon_bedRoom.png" class="img img-responsive">
                       <h5>3</h5>
@@ -386,360 +434,313 @@
                       <h5>北东</h5>
                     </div>
 
-                    <div class="detailItem">
+                    <div class="price"><h5><strong>1, 305 万</strong></h5></div>
+                  </div>
+
+                </div>
+                <!-- END FEATURE RESULT -->
+
+                <div class="resultItem col col-xs-12 col-sm-6">
+                  <img class="houseImage" src="./images/house.jpg">
+
+                  <!-- all the components below will be absolute -->
+                  <button class="likeButton">
+                    <img class="img img-responsive" src="./images/icon_unliked.png">
+                  </button>
+
+                  <button class="compareButton visible-md-block visible-lg-block">
+                    <label>对比</label>
+                    <img src="./images/icon_tick.png">
+                  </button>
+
+                  <div class="detailContainer">
+                    <div class="address">
+                      <h5 class="address1">23 Hillview Avenue,</h5>
+                      <h5>Glendale Park, Singapore</h5>
+                    </div>
+
+                    <div class="busInfo">
                       <img src="./images/icon_bus.png" class="img img-responsive">
                       <h5>0.5 公里</h5>
                     </div>
+                  </div>
 
-                    <h4 id="price">1, 305 万</h4>
+                  <!-- non-absolute position detail -->
+                  <div class="infoBar">
+                    <div class="detailItem">
+                      <img src="./images/icon_bedRoom.png" class="img img-responsive">
+                      <h5>3</h5>
+                    </div>
+
+                    <div class="detailItem">
+                      <img src="./images/icon_bathRoom.png" class="img img-responsive">
+                      <h5>2</h5>
+                    </div>
+
+                    <div class="detailItem">
+                      <img src="./images/icon_direction.png" class="img img-responsive">
+                      <h5>北东</h5>
+                    </div>
+
+                    <div class="price"><h5><strong>1, 305 万</strong></h5></div>
                   </div>
                 </div>
 
-                <!-- all the components below will be absolute -->
-                <button class="likeButton">
-                  <img class="img img-responsive" src="./images/icon_unliked.png">
-                </button>
+                <div class="resultItem col col-xs-12 col-sm-6">
+                  <img class="houseImage" src="./images/house.jpg">
 
-                <button class="compareButton visible-md-block visible-lg-block">
-                  <label>对比</label>
-                  <img src="./images/icon_tick.png">
-                </button>
-
-                <div class="detailContainer hidden-md hidden-lg">
-                  <div class="address">
-                    <h5 class="address1">23 Hillview Avenue,</h5>
-                    <h5>Glendale Park, Singapore</h5>
-                  </div>
-
-                  <div class="busInfo">
-                    <img src="./images/icon_bus.png" class="img img-responsive">
-                    <h5>0.5 公里</h5>
-                  </div>
-                </div>
-
-                <!-- non-absolute position detail -->
-                <div class="infoBar hidden-md hidden-lg">
-                  <div class="detailItem">
-                    <img src="./images/icon_bedRoom.png" class="img img-responsive">
-                    <h5>3</h5>
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_bathRoom.png" class="img img-responsive">
-                    <h5>2</h5>
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_direction.png" class="img img-responsive">
-                    <h5>北东</h5>
-                  </div>
-
-                  <div class="price"><h5><strong>1, 305 万</strong></h5></div>
-                </div>
-
-              </div>
-              <!-- END FEATURE RESULT -->
-
-              <div class="resultItem col col-xs-12 col-sm-6">
-                <img class="houseImage" src="./images/house.jpg">
-
-                <!-- all the components below will be absolute -->
-                <button class="likeButton">
-                  <img class="img img-responsive" src="./images/icon_unliked.png">
-                </button>
-
-                <button class="compareButton visible-md-block visible-lg-block">
-                  <label>对比</label>
-                  <img src="./images/icon_tick.png">
-                </button>
-
-                <div class="detailContainer">
-                  <div class="address">
-                    <h5 class="address1">23 Hillview Avenue,</h5>
-                    <h5>Glendale Park, Singapore</h5>
-                  </div>
-
-                  <div class="busInfo">
-                    <img src="./images/icon_bus.png" class="img img-responsive">
-                    <h5>0.5 公里</h5>
-                  </div>
-                </div>
-
-                <!-- non-absolute position detail -->
-                <div class="infoBar">
-                  <div class="detailItem">
-                    <img src="./images/icon_bedRoom.png" class="img img-responsive">
-                    <h5>3</h5>
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_bathRoom.png" class="img img-responsive">
-                    <h5>2</h5>
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_direction.png" class="img img-responsive">
-                    <h5>北东</h5>
-                  </div>
-
-                  <div class="price"><h5><strong>1, 305 万</strong></h5></div>
-                </div>
-              </div>
-
-              <div class="resultItem col col-xs-12 col-sm-6">
-                <img class="houseImage" src="./images/house.jpg">
-
-                <!-- all the components below will be absolute -->
-                <button class="likeButton">
-                  <img class="img img-responsive" src="./images/icon_liked.png">
-                </button>
-
-                <button class="compareButton visible-md-block visible-lg-block liked">
-                  <label>对比</label>
-                  <img src="./images/icon_tick.png">
-                </button>
-
-                <div class="detailContainer">
-                  <div class="address">
-                    <h5 class="address1">23 Hillview Avenue,</h5>
-                    <h5>Glendale Park, Singapore</h5>
-                  </div>
-
-                  <div class="busInfo">
-                    <img src="./images/icon_bus.png" class="img img-responsive">
-                    <h5>0.5 公里</h5>
-                  </div>
-                </div>
-
-                <!-- non-absolute position detail -->
-                <div class="infoBar">
-                  <div class="detailItem">
-                    <img src="./images/icon_bedRoom.png" class="img img-responsive">
-                    <h5>3</h5>
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_bathRoom.png" class="img img-responsive">
-                    <h5>2</h5>
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_direction.png" class="img img-responsive">
-                    <h5>北东</h5>
-                  </div>
-
-                  <div class="price"><h5><strong>1, 305 万</strong></h5></div>
-                </div>
-              </div>
-
-              <div class="resultItem col col-xs-12 col-sm-6">
-                <img class="houseImage" src="./images/house.jpg">
-
-                <!-- all the components below will be absolute -->
-                <button class="likeButton">
-                  <img class="img img-responsive" src="./images/icon_liked.png">
-                </button>
-
-                <button class="compareButton visible-md-block visible-lg-block liked">
-                  <label>对比</label>
-                  <img src="./images/icon_tick.png">
-                </button>
-
-                <div class="detailContainer">
-                  <div class="address">
-                    <h5 class="address1">23 Hillview Avenue,</h5>
-                    <h5>Glendale Park, Singapore</h5>
-                  </div>
-
-                  <div class="busInfo">
-                    <img src="./images/icon_bus.png" class="img img-responsive">
-                    <h5>0.5 公里</h5>
-                  </div>
-                </div>
-
-                <!-- non-absolute position detail -->
-                <div class="infoBar">
-                  <div class="detailItem">
-                    <img src="./images/icon_bedRoom.png" class="img img-responsive">
-                    <h5>3</h5>
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_bathRoom.png" class="img img-responsive">
-                    <h5>2</h5>
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_direction.png" class="img img-responsive">
-                    <h5>北东</h5>
-                  </div>
-
-                  <div class="price"><h5><strong>1, 305 万</strong></h5></div>
-                </div>
-              </div>
-
-              <div class="resultItem col col-xs-12 col-sm-6">
-                <img class="houseImage" src="./images/house.jpg">
-
-                <!-- all the components below will be absolute -->
-                <button class="likeButton">
-                  <img class="img img-responsive" src="./images/icon_liked.png">
-                </button>
-
-                <button class="compareButton visible-md-block visible-lg-block liked">
-                  <label>对比</label>
-                  <img src="./images/icon_tick.png">
-                </button>
-
-                <div class="detailContainer">
-                  <div class="address">
-                    <h5 class="address1">23 Hillview Avenue,</h5>
-                    <h5>Glendale Park, Singapore</h5>
-                  </div>
-
-                  <div class="busInfo">
-                    <img src="./images/icon_bus.png" class="img img-responsive">
-                    <h5>0.5 公里</h5>
-                  </div>
-                </div>
-
-                <!-- non-absolute position detail -->
-                <div class="infoBar">
-                  <div class="detailItem">
-                    <img src="./images/icon_bedRoom.png" class="img img-responsive">
-                    <h5>3</h5>
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_bathRoom.png" class="img img-responsive">
-                    <h5>2</h5>
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_direction.png" class="img img-responsive">
-                    <h5>北东</h5>
-                  </div>
-
-                  <div class="price"><h5><strong>1, 305 万</strong></h5></div>
-                </div>
-              </div>
-
-              <div class="resultItem col col-xs-12 col-sm-6">
-                <img class="houseImage" src="./images/house.jpg">
-
-                <!-- all the components below will be absolute -->
-                <button class="likeButton">
-                  <img class="img img-responsive" src="./images/icon_liked.png">
-                </button>
-
-                <button class="compareButton visible-md-block visible-lg-block liked">
-                  <label>对比</label>
-                  <img src="./images/icon_tick.png">
-                </button>
-
-                <div class="detailContainer">
-                  <div class="address">
-                    <h5 class="address1">23 Hillview Avenue,</h5>
-                    <h5>Glendale Park, Singapore</h5>
-                  </div>
-
-                  <div class="busInfo">
-                    <img src="./images/icon_bus.png" class="img img-responsive">
-                    <h5>0.5 公里</h5>
-                  </div>
-                </div>
-
-                <!-- non-absolute position detail -->
-                <div class="infoBar">
-                  <div class="detailItem">
-                    <img src="./images/icon_bedRoom.png" class="img img-responsive">
-                    <h5>3</h5>
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_bathRoom.png" class="img img-responsive">
-                    <h5>2</h5>
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_direction.png" class="img img-responsive">
-                    <h5>北东</h5>
-                  </div>
-
-                  <div class="price"><h5><strong>1, 305 万</strong></h5></div>
-                </div>
-              </div>
-
-              <div class="resultItem col col-xs-12 col-sm-6">
-                <img class="houseImage" src="./images/house.jpg">
-
-                <!-- all the components below will be absolute -->
-                <button class="likeButton">
-                  <img class="img img-responsive" src="./images/icon_liked.png">
-                </button>
-
-                <button class="compareButton visible-md-block visible-lg-block liked">
-                  <label>对比</label>
-                  <img src="./images/icon_tick.png">
-                </button>
-
-                <div class="detailContainer">
-                  <div class="address">
-                    <h5 class="address1">23 Hillview Avenue,</h5>
-                    <h5>Glendale Park, Singapore</h5>
-                  </div>
-
-                  <div class="busInfo">
-                    <img src="./images/icon_bus.png" class="img img-responsive">
-                    <h5>0.5 公里</h5>
-                  </div>
-                </div>
-
-                <!-- non-absolute position detail -->
-                <div class="infoBar">
-                  <div class="detailItem">
-                    <img src="./images/icon_bedRoom.png" class="img img-responsive">
-                    <h5>3</h5>
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_bathRoom.png" class="img img-responsive">
-                    <h5>2</h5>
-                  </div>
-
-                  <div class="detailItem">
-                    <img src="./images/icon_direction.png" class="img img-responsive">
-                    <h5>北东</h5>
-                  </div>
-
-                  <div class="price"><h5><strong>1, 305 万</strong></h5></div>
-                </div>
-              </div>
-
-              <!-- Page navigation -->
-              <div class="col col-xs-12">
-                <div class="pageNav">
-                  <button>
-                    <img class="arrow backArrow" src="./images/icon_arrow_left.png">
+                  <!-- all the components below will be absolute -->
+                  <button class="likeButton">
+                    <img class="img img-responsive" src="./images/icon_liked.png">
                   </button>
 
-                  <button>1</button>
-                  <button>2</button>
-                  <button>3</button>
-                  <button>...</button>
-                  <button>10</button>
-
-                  <button>
-                    <img class="arrow nextArrow" src="./images/icon_arrow_right.png">
+                  <button class="compareButton visible-md-block visible-lg-block liked">
+                    <label>对比</label>
+                    <img src="./images/icon_tick.png">
                   </button>
+
+                  <div class="detailContainer">
+                    <div class="address">
+                      <h5 class="address1">23 Hillview Avenue,</h5>
+                      <h5>Glendale Park, Singapore</h5>
+                    </div>
+
+                    <div class="busInfo">
+                      <img src="./images/icon_bus.png" class="img img-responsive">
+                      <h5>0.5 公里</h5>
+                    </div>
+                  </div>
+
+                  <!-- non-absolute position detail -->
+                  <div class="infoBar">
+                    <div class="detailItem">
+                      <img src="./images/icon_bedRoom.png" class="img img-responsive">
+                      <h5>3</h5>
+                    </div>
+
+                    <div class="detailItem">
+                      <img src="./images/icon_bathRoom.png" class="img img-responsive">
+                      <h5>2</h5>
+                    </div>
+
+                    <div class="detailItem">
+                      <img src="./images/icon_direction.png" class="img img-responsive">
+                      <h5>北东</h5>
+                    </div>
+
+                    <div class="price"><h5><strong>1, 305 万</strong></h5></div>
+                  </div>
+                </div>
+
+                <div class="resultItem col col-xs-12 col-sm-6">
+                  <img class="houseImage" src="./images/house.jpg">
+
+                  <!-- all the components below will be absolute -->
+                  <button class="likeButton">
+                    <img class="img img-responsive" src="./images/icon_liked.png">
+                  </button>
+
+                  <button class="compareButton visible-md-block visible-lg-block liked">
+                    <label>对比</label>
+                    <img src="./images/icon_tick.png">
+                  </button>
+
+                  <div class="detailContainer">
+                    <div class="address">
+                      <h5 class="address1">23 Hillview Avenue,</h5>
+                      <h5>Glendale Park, Singapore</h5>
+                    </div>
+
+                    <div class="busInfo">
+                      <img src="./images/icon_bus.png" class="img img-responsive">
+                      <h5>0.5 公里</h5>
+                    </div>
+                  </div>
+
+                  <!-- non-absolute position detail -->
+                  <div class="infoBar">
+                    <div class="detailItem">
+                      <img src="./images/icon_bedRoom.png" class="img img-responsive">
+                      <h5>3</h5>
+                    </div>
+
+                    <div class="detailItem">
+                      <img src="./images/icon_bathRoom.png" class="img img-responsive">
+                      <h5>2</h5>
+                    </div>
+
+                    <div class="detailItem">
+                      <img src="./images/icon_direction.png" class="img img-responsive">
+                      <h5>北东</h5>
+                    </div>
+
+                    <div class="price"><h5><strong>1, 305 万</strong></h5></div>
+                  </div>
+                </div>
+
+                <div class="resultItem col col-xs-12 col-sm-6">
+                  <img class="houseImage" src="./images/house.jpg">
+
+                  <!-- all the components below will be absolute -->
+                  <button class="likeButton">
+                    <img class="img img-responsive" src="./images/icon_liked.png">
+                  </button>
+
+                  <button class="compareButton visible-md-block visible-lg-block liked">
+                    <label>对比</label>
+                    <img src="./images/icon_tick.png">
+                  </button>
+
+                  <div class="detailContainer">
+                    <div class="address">
+                      <h5 class="address1">23 Hillview Avenue,</h5>
+                      <h5>Glendale Park, Singapore</h5>
+                    </div>
+
+                    <div class="busInfo">
+                      <img src="./images/icon_bus.png" class="img img-responsive">
+                      <h5>0.5 公里</h5>
+                    </div>
+                  </div>
+
+                  <!-- non-absolute position detail -->
+                  <div class="infoBar">
+                    <div class="detailItem">
+                      <img src="./images/icon_bedRoom.png" class="img img-responsive">
+                      <h5>3</h5>
+                    </div>
+
+                    <div class="detailItem">
+                      <img src="./images/icon_bathRoom.png" class="img img-responsive">
+                      <h5>2</h5>
+                    </div>
+
+                    <div class="detailItem">
+                      <img src="./images/icon_direction.png" class="img img-responsive">
+                      <h5>北东</h5>
+                    </div>
+
+                    <div class="price"><h5><strong>1, 305 万</strong></h5></div>
+                  </div>
+                </div>
+
+                <div class="resultItem col col-xs-12 col-sm-6">
+                  <img class="houseImage" src="./images/house.jpg">
+
+                  <!-- all the components below will be absolute -->
+                  <button class="likeButton">
+                    <img class="img img-responsive" src="./images/icon_liked.png">
+                  </button>
+
+                  <button class="compareButton visible-md-block visible-lg-block liked">
+                    <label>对比</label>
+                    <img src="./images/icon_tick.png">
+                  </button>
+
+                  <div class="detailContainer">
+                    <div class="address">
+                      <h5 class="address1">23 Hillview Avenue,</h5>
+                      <h5>Glendale Park, Singapore</h5>
+                    </div>
+
+                    <div class="busInfo">
+                      <img src="./images/icon_bus.png" class="img img-responsive">
+                      <h5>0.5 公里</h5>
+                    </div>
+                  </div>
+
+                  <!-- non-absolute position detail -->
+                  <div class="infoBar">
+                    <div class="detailItem">
+                      <img src="./images/icon_bedRoom.png" class="img img-responsive">
+                      <h5>3</h5>
+                    </div>
+
+                    <div class="detailItem">
+                      <img src="./images/icon_bathRoom.png" class="img img-responsive">
+                      <h5>2</h5>
+                    </div>
+
+                    <div class="detailItem">
+                      <img src="./images/icon_direction.png" class="img img-responsive">
+                      <h5>北东</h5>
+                    </div>
+
+                    <div class="price"><h5><strong>1, 305 万</strong></h5></div>
+                  </div>
+                </div>
+
+                <div class="resultItem col col-xs-12 col-sm-6">
+                  <img class="houseImage" src="./images/house.jpg">
+
+                  <!-- all the components below will be absolute -->
+                  <button class="likeButton">
+                    <img class="img img-responsive" src="./images/icon_liked.png">
+                  </button>
+
+                  <button class="compareButton visible-md-block visible-lg-block liked">
+                    <label>对比</label>
+                    <img src="./images/icon_tick.png">
+                  </button>
+
+                  <div class="detailContainer">
+                    <div class="address">
+                      <h5 class="address1">23 Hillview Avenue,</h5>
+                      <h5>Glendale Park, Singapore</h5>
+                    </div>
+
+                    <div class="busInfo">
+                      <img src="./images/icon_bus.png" class="img img-responsive">
+                      <h5>0.5 公里</h5>
+                    </div>
+                  </div>
+
+                  <!-- non-absolute position detail -->
+                  <div class="infoBar">
+                    <div class="detailItem">
+                      <img src="./images/icon_bedRoom.png" class="img img-responsive">
+                      <h5>3</h5>
+                    </div>
+
+                    <div class="detailItem">
+                      <img src="./images/icon_bathRoom.png" class="img img-responsive">
+                      <h5>2</h5>
+                    </div>
+
+                    <div class="detailItem">
+                      <img src="./images/icon_direction.png" class="img img-responsive">
+                      <h5>北东</h5>
+                    </div>
+
+                    <div class="price"><h5><strong>1, 305 万</strong></h5></div>
+                  </div>
+                </div>
+
+                <!-- Page navigation -->
+                <div class="col col-xs-12">
+                  <div class="pageNav">
+                    <button>
+                      <img class="arrow backArrow" src="./images/icon_arrow_left.png">
+                    </button>
+
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>...</button>
+                    <button>10</button>
+
+                    <button>
+                      <img class="arrow nextArrow" src="./images/icon_arrow_right.png">
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="main-map col col-md-5 visible-md-block visible-lg-block">
+          <div class="visible-md-block visible-lg-block main-map">
             <div class="map">
-              <img class="img img-responsive" src="./images/map.jpg">
+              <img class="mapImage" src="./images/map.jpg">
 
               <!-- absolute item that lay on the map -->
               <div class="pin pin1">
@@ -832,7 +833,7 @@
           </div>
 
           <div class="item moreInfoArea">
-            <h4><strong>1</strong> 房源: 2</h4>
+            <h4>房源: 2</h4>
             <h6>对比限制4栋房源</h6>
             <button>开始对比</button>
           </div>

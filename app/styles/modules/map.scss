@@ -4,6 +4,8 @@
 .map {
 	position: relative;
 	padding: 0;
+	height: 100%;
+	overflow: hidden;
 
 	.pin {
 		position: absolute;
@@ -65,5 +67,10 @@
 		.infoBar {
 			background-color: transparent;
 		}
+	}
+
+	.mapImage {
+		height: 100%;
+		width: auto;
 	}
 }
