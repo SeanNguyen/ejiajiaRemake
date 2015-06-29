@@ -45,6 +45,14 @@ function toggleFilterOption() {
 	}
 }
 
+function toggleFavouriteBar() {
+	if($('.main-favourite').css('display') === 'none') {
+		$('.main-favourite').css({ 'display': 'block'});
+	} else {
+		$('.main-favourite').css({ 'display': 'none'});
+	}
+}
+
 function swapElement(element1, element2) {
 	element1.before(element2);
 }

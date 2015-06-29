@@ -23,8 +23,12 @@ html, body {
   }
 
   .result-map-group {
-    height: calc(100% - 150px);
+    height: calc(100% - 140px);
     padding: 0;
+
+    @media(max-width: $width-sm) {
+      height: calc(100% - 100 px);
+    }
   }
 
   .main-result {
@@ -36,6 +40,10 @@ html, body {
     
     .content::-webkit-scrollbar { 
       display: none;
+    }
+
+    @media(max-width: $width-md) {
+      width: 100%;
     }
   }
 
@@ -49,10 +57,28 @@ html, body {
 
   .main-favourite {
     position: fixed;
-    top: auto; bottom: 0; right: 0; left: 0;
+    z-index: 1000;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    @media(max-width: $width-sm) {
+      display: none;
+    }
 
-    height: 50px;
-    border: solid 1px #000;
+    .toggleFavouriteButton {
+      position: fixed;
+      top: auto; bottom: 10px;
+      left: auto; right: 10px;
+
+      height: 40px;
+      width: 40px;
+
+      @media (max-width: $width-md) {
+          display: none;
+      }
+    }
   }
 }
 
